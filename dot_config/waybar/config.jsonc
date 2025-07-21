@@ -1,0 +1,102 @@
+{
+	"layer": "top",
+	"position": "top",
+	"spacing": 0,
+	"height": 32,
+	"modules-left": ["custom/logo", "wlr/taskbar"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": [
+		"tray",
+		"memory",
+		"network",
+		"wireplumber",
+		"battery",
+		"clock"
+	],
+
+
+	"custom/logo": {
+		"format": "",
+		"tooltip": false,
+		"on-click": "~/.config/hypr/hyprland/scripts/rofi.sh"
+	},
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"on-click-right": "fullscreen",
+		// "icon-theme": "WhiteSur",
+		"icon-size": 25,
+		"tooltip-format": "{title}"
+	},
+
+
+	"hyprland/workspaces": {
+		"on-click": "activate",
+		"format": "{name}",
+		"all-outputs": true,
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		}
+	},
+
+
+	"tray": {
+		"spacing": 10
+	},
+	"memory": {
+		"interval": 5,
+		"format": "{used:0.1f}G/{total:0.1f}G"
+	},
+	"network": {
+		"format-wifi": "{icon}",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-ethernet": "󰀂",
+		"format-disconnected": "󰖪",
+		"tooltip-format-wifi": "{essid}",
+		"tooltip-format-ethernet": "{ifname}",
+		"tooltip-format-disconnected": "Disconnected",
+		"interval": 5,
+		"nospacing": 1
+	},
+	"wireplumber": {
+		"format": "{volume}% {icon}",
+		"format-bluetooth": "󰂰",
+		"nospacing": 1,
+		"tooltip-format": "{volume}%",
+		"format-muted": "󰝟",
+		"format-icons": {
+			"headphone": "",
+			"default": ["󰖀", "󰕾", ""]
+		},
+		"on-click": "pamixer -t",
+		"scroll-step": 1
+	},
+	"battery": {
+		"format": "{capacity}% {icon}",
+		"format-icons": {
+			"charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+			"default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+		},
+		"interval": 5,
+		"tooltip": false
+	},
+	"clock": {
+		"format": "{:%H:%M - %d/%m/%Y}",
+		"tooltip-format": "{calendar}",
+		"calendar": {
+		"mode": "month",
+		"on-scroll": 1,
+		"format": {
+			"today": "<span color='#ff5555'><b>{}</b></span>"
+    		}
+  	},
+  		"actions": {
+    			"on-scroll-up": "shift_up",
+    			"on-scroll-down": "shift_down"
+  		}
+	}
+}
