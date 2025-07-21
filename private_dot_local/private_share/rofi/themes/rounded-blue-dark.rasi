@@ -24,8 +24,7 @@
 }
 
 window {
-    location:       north;
-    y-offset:       calc(50% - 176px);
+    anchor: center;
     width:          480;
 
     background-color:   @bg0;
@@ -66,7 +65,7 @@ listview {
     background-color:   transparent;
 
     margin:     12px 0 0;
-    lines:      6;
+    lines:      5;
     columns:    1;
 
     fixed-height: true;
