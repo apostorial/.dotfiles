@@ -32,3 +32,4 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 yazi
 zen-browser-bin
+brightnessctl
