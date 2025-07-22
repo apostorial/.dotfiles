@@ -13,6 +13,7 @@ hyprsunset
 iwd
 libnotify
 mako
+nsxiv
 mpv
 noto-fonts-emoji
 nwg-look
