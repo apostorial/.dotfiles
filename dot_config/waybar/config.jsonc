@@ -67,6 +67,7 @@
 		"format-on": "",
 		"format-off": "󰂲",
 		"format-disabled": "󰂲",
+		"format-connected": "",
 		"on-click": "blueman-manager"
 	},
 	"wireplumber": {
