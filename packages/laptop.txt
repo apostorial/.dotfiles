@@ -1,0 +1,4 @@
+brightnessctl
+bluez
+bluez-utils
+blueman

@@ -9,6 +9,7 @@
 		"tray",
 		"memory",
 		"network",
+		"bluetooth",
 		"wireplumber",
 		"battery",
 		"clock"
@@ -43,14 +44,14 @@
 		}
 	},
 
-
+	
 	"tray": {
 		"spacing": 10
 	},
 	"memory": {
 		"interval": 5,
 		"format": "{used:0.1f}G/{total:0.1f}G"
-	},
+	},	
 	"network": {
 		"format-wifi": "{icon}",
 		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -61,6 +62,12 @@
 		"tooltip-format-disconnected": "Disconnected",
 		"interval": 5,
 		"nospacing": 1
+	},
+	"bluetooth": {
+		"format-on": "",
+		"format-off": "󰂲",
+		"format-disabled": "󰂲",
+		"on-click": "blueman-manager"
 	},
 	"wireplumber": {
 		"format": "{volume}% {icon}",
