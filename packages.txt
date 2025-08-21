@@ -39,3 +39,5 @@ bluez
 bluez-utils
 blueman
 archlinux-xdg-menu
+libappindicator-gtk3
+libayatana-appindicator
