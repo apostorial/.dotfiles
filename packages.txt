@@ -35,10 +35,7 @@ xdg-desktop-portal-hyprland
 yazi
 zen-browser-bin
 brightnessctl
-<<<<<<< Updated upstream
 bluez
 bluez-utils
 blueman
-=======
 archlinux-xdg-menu
->>>>>>> Stashed changes
